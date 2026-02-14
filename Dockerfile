@@ -6,7 +6,7 @@ WORKDIR /myapp
 
 #copying jar file
 
-COPY target/*.jar ./myapp/myapp.jar
+COPY target/*.jar app.jar
 
 #port
 
@@ -14,4 +14,4 @@ EXPOSE 8080
 
 #Start application
 
-ENTRYPOINT ["java","-jar","myapp.jar"]
+ENTRYPOINT ["java","-jar","app.jar"]
