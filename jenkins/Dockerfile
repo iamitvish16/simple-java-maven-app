@@ -6,7 +6,7 @@ WORKDIR /myapp
 
 #copying jar file
 
-COPY target/*.jar myapp.jar
+COPY target/*.jar ./myapp/myapp.jar
 
 #port
 
